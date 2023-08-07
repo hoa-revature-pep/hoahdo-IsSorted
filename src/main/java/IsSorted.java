@@ -9,13 +9,23 @@ public class IsSorted {
     public boolean checkSort(int[] arr){
         
         for (int idx = 0; idx < arr.length-1; idx++) {
-            if(arr[idx] < arr[idx+1]) {
-                continue;
-            } else {
+            if(arr[idx] > arr[idx+1]) {
                 return false;
             }
         }
-
         return true;
     }
 }
+
+// public boolean checkSort(int[] arr){
+        
+//     for (int idx = 0; idx < arr.length-1; idx++) {
+//         if(arr[idx] < arr[idx+1]) {
+//             continue;
+//         } else {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
